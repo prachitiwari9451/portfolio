@@ -272,14 +272,33 @@ export default function App() {
 
       {/* Mobile Navigation Drawer */}
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`} id="mobileMenu">
-        <button className="mobile-menu-close" type="button" onClick={() => setIsMenuOpen(false)} aria-label="Close Navigation Menu">
-          <i className="fa-solid fa-xmark"></i>
-        </button>
-        <a href="#about" onClick={handleMenuLinkClick}><i className="fa-solid fa-user"></i> About</a>
+        <div className="mobile-menu-header">
+          <span className="mobile-menu-title">Menu</span>
+          <button className="mobile-menu-close" type="button" onClick={() => setIsMenuOpen(false)} aria-label="Close Navigation Menu">
+            <i className="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        
+        <a href="#about" onClick={handleMenuLinkClick}><i className="fa-solid fa-user"></i> About Me</a>
         <a href="#services" onClick={handleMenuLinkClick}><i className="fa-solid fa-gears"></i> Services</a>
         <a href="#projects" onClick={handleMenuLinkClick}><i className="fa-solid fa-code-branch"></i> Projects</a>
         <a href="#experience" onClick={handleMenuLinkClick}><i className="fa-solid fa-briefcase"></i> Experience</a>
         <a href="#contact" onClick={handleMenuLinkClick}><i className="fa-solid fa-paper-plane"></i> Contact</a>
+        
+        {/* Mobile Drawer Bottom Icons & Action */}
+        <div style={{ marginTop: '2rem', paddingTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem', borderTop: '1px solid var(--border-color)' }}>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+            <a href="https://github.com/prachitiwari9451/" className="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" style={{ borderBottom: 'none', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px' }}>
+              <i className="fa-brands fa-github" style={{ fontSize: '1.1rem', margin: 0 }}></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prachi-tiwari-9b7ab2241" className="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" style={{ borderBottom: 'none', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px' }}>
+              <i className="fa-brands fa-linkedin-in" style={{ fontSize: '1.1rem', margin: 0 }}></i>
+            </a>
+          </div>
+          <a href="#contact" className="hire-btn" onClick={handleMenuLinkClick} style={{ justifyContent: 'center', borderBottom: 'none', color: '#ffffff', display: 'inline-flex', padding: '0.6rem 1.2rem', borderRadius: '30px' }}>
+            <i className="fa-solid fa-envelope"></i> Hire Me
+          </a>
+        </div>
       </div>
 
       {/* Mobile Drawer Overlay */}
@@ -294,7 +313,7 @@ export default function App() {
           <Reveal>
             <div className="hero-badge">
               <span className="pulse-dot"></span>
-              ✨ Visual Storyteller &amp; Developer
+              Backend &amp; Full-Stack Developer
             </div>
           </Reveal>
 
@@ -311,7 +330,7 @@ export default function App() {
                 words={[
                   'Backend Engineer',
                   '.NET Core Specialist',
-                  'Visual Storyteller',
+                  'Database Architect',
                   'Full-Stack Developer'
                 ]}
               />
@@ -668,30 +687,30 @@ export default function App() {
               <div className="academic-icon">
                 <i className="fa-solid fa-graduation-cap"></i>
               </div>
-              <span className="academic-year">2020 - 2024</span>
+              <span className="academic-year">2022 - 2025</span>
               <h3 className="academic-title">B.Tech in IT</h3>
               <h4 className="academic-inst">BSSITM / AKTU</h4>
-              <p className="academic-desc">Graduated with a Bachelor of Technology in Information Technology. Focused on software engineering principles, algorithms, relational database systems, and object-oriented architectures.</p>
+              <p className="academic-desc">Focused on advanced software engineering principles, core database structure design, complex algorithms, and scalable web application architectures.</p>
             </GlowCard>
 
             <GlowCard className="academic-card">
               <div className="academic-icon">
                 <i className="fa-solid fa-award"></i>
               </div>
-              <span className="academic-year">2017 - 2020</span>
+              <span className="academic-year">2019 - 2022</span>
               <h3 className="academic-title">Diploma in IT</h3>
               <h4 className="academic-inst">CSM Polytechnic</h4>
-              <p className="academic-desc">Acquired foundational computer programming skills, scoring high marks in database design, networking, web development basics, and software structures.</p>
+              <p className="academic-desc">Acquired core programming skills, scoring high marks in database design, networking fundamentals, web development basics, and software structures.</p>
             </GlowCard>
 
             <GlowCard className="academic-card">
               <div className="academic-icon">
                 <i className="fa-solid fa-briefcase"></i>
               </div>
-              <span className="academic-year">2024 - Present</span>
-              <h3 className="academic-title">Full-Stack Engineer</h3>
-              <h4 className="academic-inst">Verified Projects Showcase</h4>
-              <p className="academic-desc">Designing scalable web systems, optimizing backend databases, integrating microservices and Dapper, and writing clean, recruiters-audit-ready code.</p>
+              <span className="academic-year">2023 - Present</span>
+              <h3 className="academic-title">Full-Stack .NET Developer</h3>
+              <h4 className="academic-inst">Technosys Technologies Pvt Ltd</h4>
+              <p className="academic-desc">Designed and built enterprise-grade C# web solutions, integrated RESTful APIs and Dapper database architectures, and developed modular user interfaces.</p>
             </GlowCard>
           </div>
         </div>
