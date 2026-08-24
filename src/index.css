@@ -1509,25 +1509,72 @@ body.light-theme .recruiter-badge {
         grid-template-columns: 1fr;
     }
     
+    .contact-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: center;
+    }
+
     .contact-channels-grid {
         grid-template-columns: 1fr;
+        width: 100%;
     }
     
     .contact-info-panel {
         padding: 1.75rem;
         gap: 1.5rem;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-info-panel .recruiter-badge {
+        align-self: center;
+    }
+    
+    .contact-info-panel .connect-dock {
+        justify-content: center;
     }
     
     .contact-header-text {
         font-size: 1.85rem;
+        text-align: center;
     }
     
     .channel-card {
-        padding: 1.25rem;
+        padding: 1.5rem 1.25rem;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .channel-header {
+        justify-content: center;
+        gap: 0.75rem;
+        width: 100%;
+    }
+    
+    .channel-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .channel-link {
+        justify-content: center;
     }
     
     .availability-banner {
         padding: 1rem 1.25rem;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
     }
     
     .quote-banner blockquote {
