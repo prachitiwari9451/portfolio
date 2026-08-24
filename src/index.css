@@ -1513,6 +1513,23 @@ body.light-theme .recruiter-badge {
         grid-template-columns: 1fr;
     }
     
+    .contact-info-panel {
+        padding: 1.75rem;
+        gap: 1.5rem;
+    }
+    
+    .contact-header-text {
+        font-size: 1.85rem;
+    }
+    
+    .channel-card {
+        padding: 1.25rem;
+    }
+    
+    .availability-banner {
+        padding: 1rem 1.25rem;
+    }
+    
     .quote-banner blockquote {
         font-size: 1.15rem;
     }
